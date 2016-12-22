@@ -1,0 +1,100 @@
+{
+    "name": "vuehelper",
+    "displayName": "VueHelper",
+    "description": "Code snippets for Vue,Vue-router and Vuex",
+    "version": "0.0.1",
+    "publisher": "oysun",
+    "icon": "src/images/logo.jpg",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+     "keywords": [
+        "javascript",
+        "snippet",
+        "vue",
+        "vue-router",
+        "vuex"
+    ],
+    "categories": [
+        "Snippets",
+        "Languages"
+    ],
+     "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": "",
+        "email": "web-oysun@qq.com"
+    },
+    "license": "MIT",
+    "contributes": {
+        "languages": [
+            {
+                "id": "vue",
+                "aliases": [
+                    "Vue",
+                    "vue"
+                ],
+                "extensions": [
+                    ".vue"
+                ],
+                "configuration": "./src/languages/vue.json"
+            },
+            {
+                "id": "sass",
+                "aliases": [
+                    "SASS",
+                    "Sass",
+                    "sass"
+                ],
+                "configuration": "./src/languages/sass.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vue",
+                "scopeName": "text.html.vue",
+                "path": "./src/syntaxes/vue.tmLanguage"
+            },
+            {
+                "language": "sass",
+                "scopeName": "source.css.sass",
+                "path": "./src/syntaxes/sass.json"
+            },
+            {
+                "scopeName": "source.vue-js",
+                "path": "./src/syntaxes/vue-js.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./src/snippets/min.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./src/snippets/min.json"
+            },
+            {
+                "language": "vue",
+                "path": "./src/snippets/min.json"
+            },
+            {
+                "language": "html",
+                "path": "./src/snippets/min.json"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
