@@ -21,10 +21,10 @@
     ],
      "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/OYsun/vscode-VueHelper"
     },
     "bugs": {
-        "url": "",
+        "url": "https://github.com/OYsun/vscode-VueHelper/issues",
         "email": "web-oysun@qq.com"
     },
     "license": "MIT",
