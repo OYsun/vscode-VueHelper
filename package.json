@@ -2,7 +2,7 @@
     "name": "vuehelper",
     "displayName": "VueHelper",
     "description": "Code snippets for Vue,Vue-router and Vuex",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "publisher": "oysun",
     "icon": "src/images/logo.jpg",
     "engines": {
@@ -70,19 +70,23 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./src/snippets/min.json"
+                "path": "./src/snippets/main.json"
             },
             {
                 "language": "typescript",
-                "path": "./src/snippets/min.json"
-            },
-            {
-                "language": "vue",
-                "path": "./src/snippets/min.json"
+                "path": "./src/snippets/main.json"
             },
             {
                 "language": "html",
-                "path": "./src/snippets/min.json"
+                "path": "./src/snippets/html.json"
+            },
+            {
+                "language": "vue",
+                "path": "./src/snippets/main.json"
+            },
+            {
+                "language": "vue",
+                "path": "./src/snippets/html.json"
             }
         ]
     },

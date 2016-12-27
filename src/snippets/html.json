@@ -1,0 +1,156 @@
+{ 
+    "V-templates": {
+        "prefix": "V",
+        "body": [
+            "<template>\n\t<div id='${id}'>\n\t\t$0\n\t</div>\n</template>\n\n<script>\nexport default {\n\tname: '${id:name}'\n\n}\n</script>\n\n<style scoped>\n\n</style>"
+        ],
+        "description": "Quickly generate vue component templates"
+	},
+    "v-text": {
+        "prefix": "vText",
+        "body": [
+            "v-text=\"${msg}\""
+        ],
+        "description": "Updates the element’s textContent. If you need to update the part of textContent, you should use {{ Mustache }} interpolations."
+    },
+    "v-html": {
+        "prefix": "vHtml",
+        "body": [
+            "v-html=\"${html}\""
+        ],
+        "description": "Updates the element’s innerHTML. (Note that the contents are inserted as plain HTML - they will not be compiled as Vue templates.) "
+    },
+    "v-if": {
+        "prefix": "vIf",
+        "body": [
+            "v-if=\"${condition}\""
+        ],
+        "description": "Conditionally render the element based on the truthy-ness of the expression value. "
+    },
+    "v-show": {
+        "prefix": "vShow",
+        "body": [
+            "v-show=\"${condition}\""
+        ],
+        "description": "Toggle’s the element’s display CSS property based on the truthy-ness of the expression value."
+    },
+    "v-else": {
+        "prefix": "vElse",
+        "body": [
+            "v-else"
+        ],
+        "description": "Denote the “else block” for v-if or a v-if/v-else-if chain."
+    },
+    "v-else-if": {
+        "prefix": "vElseIf",
+        "body": [
+            "v-else-if=\"${condition}\""
+        ],
+        "description": "Denote the “else block” for v-if or a v-if/v-else-if chain."
+    },
+    "v-for": {
+        "prefix": "vFor",
+        "body": [
+            "v-for=\"(${item},index) in ${items}\""
+        ],
+        "description": "Render the element or template block multiple times based on the source data. "
+    },
+    "v-on": {
+        "prefix": "vOn",
+        "body": [
+            "v-on:${event}=\"${handle}\""
+        ],
+        "description": "Attaches an event listener to the element. The event type is denoted by the argument. "
+    },
+    "v-bind": {
+        "prefix": "vBind",
+        "body": [
+            "v-bind:${argument}=\"${optional}\""
+        ],
+        "description": "Dynamically bind one or more attributes, or a component prop to an expression."
+    },
+    "v-model": {
+        "prefix": "vModel",
+        "body": [
+            "v-model=\"${msg}\""
+        ],
+        "description": "Create a two-way binding on a form input element or a component. "
+    },
+    "v-pre": {
+        "prefix": "vPre",
+        "body": [
+            "v-pre"
+        ],
+        "description": "Skip compilation for this element and all its children. You can use this for displaying raw mustache tags. "
+    },
+    "v-cloak": {
+        "prefix": "vCloak",
+        "body": [
+            "v-cloak"
+        ],
+        "description": "This directive will remain on the element until the associated Vue instance finishes compilation."
+    },
+    "v-once": {
+        "prefix": "vOnce",
+        "body": [
+            "v-once"
+        ],
+        "description": "Render the element and component once only. On subsequent re-renders, the element/component and all its children will be treated as static content and skipped. This can be used to optimize update performance."
+    },
+    "key": {
+        "prefix": "key",
+        "body": [
+            "key=\"$0\""
+        ],
+        "description": "The key special attribute is primarily used as a hint for Vue’s virtual DOM algorithm to identify VNodes when diffing the new list of nodes against the old list. "
+    },
+    "ref": {
+        "prefix": "ref",
+        "body": [
+            "ref=\"$0\""
+        ],
+        "description": "ref is used to register a reference to an element or a child component."
+    },
+    "solt": {
+        "prefix": "solt",
+        "body": [
+            "solt=\"$0\""
+        ],
+        "description": "Used on content inserted into child components to indicate which named slot the content belongs to."
+    },
+    "keep-alive": {
+        "prefix": "keepAlive",
+        "body": [
+            "<keep-alive include=\"$1\">\n\t$0\n</keep-alive>"
+        ],
+        "description": "When wrapped around a dynamic component, <keep-alive> caches the inactive component instances without destroying them. "
+    },
+    "transition": {
+        "prefix": "transition",
+        "body": [
+            "<transition name=\"$1\" mode=\"$2\">\n\t$0\n</transition>"
+        ],
+        "description": "<transition> serve as transition effects for single element/component. "
+    },
+    "transition-group": {
+        "prefix": "transitionGroup",
+        "body": [
+            "<transition-group tag=\"$1\" name=\"$2\">\n\t$0\n</transition-group>"
+        ],
+        "description": " <transition-group> serve as transition effects for multiple elements/components"
+    },
+    "router-link": {
+        "prefix": "router-link",
+        "body": [
+            "<router-link to=\"${path}\"></router-link>"
+        ],
+        "description": "[router]<router-link> is the component for enabling user navigation in a router-enabled app. "
+    },
+    "router-view": {
+        "prefix": "router-view",
+        "body": [
+            "<router-view name=\"${path}\"></router-view>"
+        ],
+        "description": "[router]The <router-view> component is a functional component that renders the matched component for the given path. "
+    }
+}
