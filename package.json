@@ -2,13 +2,13 @@
     "name": "vuehelper",
     "displayName": "VueHelper",
     "description": "Code snippets for Vue,Vue-router and Vuex",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "oysun",
     "icon": "src/images/logo.jpg",
     "engines": {
         "vscode": "^1.5.0"
     },
-     "keywords": [
+    "keywords": [
         "javascript",
         "snippet",
         "vue",
