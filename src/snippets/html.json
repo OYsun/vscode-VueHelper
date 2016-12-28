@@ -6,6 +6,13 @@
         ],
         "description": "Quickly generate vue component templates"
 	},
+    "template": {
+        "prefix": "template",
+        "body": [
+            "<template>\n\t$0\n</template>"
+        ],
+        "description": "A string template to be used as the markup for the Vue instance. The template will replace the mounted element. Any existing markup inside the mounted element will be ignored, unless content distribution slots are present in the template"
+    },
     "v-text": {
         "prefix": "vText",
         "body": [
