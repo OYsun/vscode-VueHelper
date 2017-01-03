@@ -107,21 +107,28 @@
     "key": {
         "prefix": "key",
         "body": [
-            "key=\"$0\""
+            "key=\"$1\""
         ],
         "description": "The key special attribute is primarily used as a hint for Vue’s virtual DOM algorithm to identify VNodes when diffing the new list of nodes against the old list. "
     },
     "ref": {
         "prefix": "ref",
         "body": [
-            "ref=\"$0\""
+            "ref=\"$1\""
         ],
         "description": "ref is used to register a reference to an element or a child component."
+    },
+    "soltName": {
+        "prefix": "soltName",
+        "body": [
+            "<solt name=\"$1\"></solt>"
+        ],
+        "description": "Used on content inserted into child components to indicate which named slot the content belongs to."
     },
     "solt": {
         "prefix": "solt",
         "body": [
-            "solt=\"$0\""
+            "solt=\"$1\""
         ],
         "description": "Used on content inserted into child components to indicate which named slot the content belongs to."
     },
