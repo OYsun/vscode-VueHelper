@@ -2,9 +2,7 @@
     "vue": {
         "prefix": "Vue",
         "body": [
-            "new Vue({",
-            "\t$1",
-            "})"
+            "new Vue({\n\t$1\n})"
         ],
         "description": "Create a vue instance"
     },
@@ -757,31 +755,38 @@
             ],
             "description": "[vuex]Hot swap new actions and mutations. "
     },
+    "namespaced": {
+            "prefix": "namespaced",
+            "body": [
+                "namespaced: true"
+            ],
+            "description": "[vuex]If you want your modules to be more self-contained or reusable, you can mark it as namespaced with namespaced: true. When the module is registered, all of its getters, actions and mutations will be automatically namespaced based on the path the module is registered at"
+    },
     "mapState": {
             "prefix": "mapState",
             "body": [
-                "mapState(${1:[]|{\\}})"
+                "mapState('${modulePath}', ${[]|{\\}})"
             ],
             "description": "[vuex]Create component computed options that return the sub tree of the Vuex store. "
     },
     "mapGetters": {
             "prefix": "mapGetters",
             "body": [
-                "mapGetters(${1:[]|{\\}})"
+                "mapGetters('${modulePath}', ${1:[]|{\\}})"
             ],
             "description": "[vuex]Create component computed options that return the evaluated value of a getter."
     },
     "mapActions": {
             "prefix": "mapActions",
             "body": [
-                "mapActions(${1:[]|{\\}})"
+                "mapActions('${modulePath}', ${1:[]|{\\}})"
             ],
             "description": "[vuex]Create component methods options that dispatch an action."
     },
     "mapMutations": {
             "prefix": "mapMutations",
             "body": [
-                "mapMutations(${1:[]|{\\}})"
+                "mapMutations('${modulePath}', ${1:[]|{\\}})"
             ],
             "description": "[vuex]Create component methods options that commit a mutation"
     },
