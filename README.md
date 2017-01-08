@@ -2,9 +2,8 @@
 
  ![logo](./src/images/logo.jpg)
 
-## note
+## Notes
 
-- master为英文描述版本，需要中文版本的请切换 [VueHelper-zh](https://github.com/OYsun/vscode-VueHelper/tree/VueHelper-zh)分支，注意在vscode扩展市场上的是英文描述版本
 - 版本更新详情请浏览[releases](https://github.com/OYsun/vscode-VueHelper/releases)
 - 关于文件配置问题，请参考这个[issue](https://github.com/OYsun/vscode-VueHelper/issues/1)
 
