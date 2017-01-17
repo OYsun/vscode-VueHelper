@@ -1,5 +1,5 @@
 node_modules
 vsc-extension-quickstart.md
 *.vsix
-.eslintrc
-.jsconfig
+.eslintrc.json
+jsconfig.json
