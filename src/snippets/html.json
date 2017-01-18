@@ -118,17 +118,17 @@
         ],
         "description": "ref is used to register a reference to an element or a child component."
     },
-    "soltName": {
-        "prefix": "soltName",
+    "slotName": {
+        "prefix": "slotName",
         "body": [
-            "<solt name=\"$1\"></solt>"
+            "<slot name=\"$1\"></slot>"
         ],
         "description": "Used on content inserted into child components to indicate which named slot the content belongs to."
     },
-    "solt": {
-        "prefix": "solt",
+    "slot": {
+        "prefix": "slot",
         "body": [
-            "solt=\"$1\""
+            "slot=\"$1\""
         ],
         "description": "Used on content inserted into child components to indicate which named slot the content belongs to."
     },
