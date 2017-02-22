@@ -2,7 +2,7 @@
     "name": "vuehelper",
     "displayName": "VueHelper",
     "description": "Code snippets for Vue,Vue-router and Vuex",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "publisher": "oysun",
     "icon": "src/images/logo.jpg",
     "engines": {
@@ -27,54 +27,19 @@
         "url": "https://github.com/OYsun/vscode-VueHelper/issues",
         "email": "web-oysun@qq.com"
     },
+    "extensionDependencies": [
+        "octref.vetur"
+    ],
     "license": "MIT",
     "contributes": {
-        "languages": [
-            {
-                "id": "vue",
-                "aliases": [
-                    "Vue",
-                    "vue"
-                ],
-                "extensions": [
-                    ".vue"
-                ],
-                "configuration": "./src/languages/vue.json"
-            },
-            {
-                "id": "sass",
-                "aliases": [
-                    "SASS",
-                    "Sass",
-                    "sass"
-                ],
-                "configuration": "./src/languages/sass.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "vue",
-                "scopeName": "text.html.vue",
-                "path": "./src/syntaxes/vue.tmLanguage"
-            },
-            {
-                "language": "sass",
-                "scopeName": "source.css.sass",
-                "path": "./src/syntaxes/sass.json"
-            },
-            {
-                "scopeName": "source.vue-js",
-                "path": "./src/syntaxes/vue-js.json"
-            }
-        ],
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./src/snippets/main.json"
+                "path": "./src/snippets/javascript.json"
             },
             {
                 "language": "typescript",
-                "path": "./src/snippets/main.json"
+                "path": "./src/snippets/javascript.json"
             },
             {
                 "language": "html",
@@ -82,11 +47,7 @@
             },
             {
                 "language": "vue",
-                "path": "./src/snippets/main.json"
-            },
-            {
-                "language": "vue",
-                "path": "./src/snippets/html.json"
+                "path": "./src/snippets/vue.json"
             }
         ]
     },

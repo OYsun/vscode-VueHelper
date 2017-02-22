@@ -343,7 +343,7 @@
     "vm.$root": {
         "prefix": "vm$root",
         "body": [
-            "${this}.\\$root$"
+            "${this}.\\$root"
         ],
         "description": "The root Vue instance of the current component tree. If the current instance has no parents this value will be itself."
     },
