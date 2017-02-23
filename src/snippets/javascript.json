@@ -464,7 +464,7 @@
     "VR": {
         "prefix": "VR",
         "body": [
-            "import Vue from 'vue'\nimport Router from 'vue-router'\n\nVue.use(Router)\n\nexport default new Router({\n\tmode: '${history}',\n\tbase: ${__dirname},\n\troutes:[$0]\n})"
+            "import Vue from 'vue'\nimport Router from 'vue-router'\n\nVue.use(Router)\n\nexport default new Router({\n\tmode: '${history}',\n\tbase: ${__dirname},\n\troutes: [$0]\n})"
         ],
         "description": "[router]VueRouter master file template"
     },

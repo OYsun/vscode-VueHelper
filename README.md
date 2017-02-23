@@ -5,13 +5,7 @@
 ## Notes
 
 - 版本更新详情请浏览[releases](https://github.com/OYsun/vscode-VueHelper/releases)
-- 关于文件配置问题
-
-```
- "files.associations": {
-    "*.vue": "vue"
- }
-```
+- 关于文件配置问题,请务必看这里：https://github.com/OYsun/vscode-VueHelper/issues/1
 
 ## feature
 - （1） may be the best vue code snippets plug-ins in Vscode, not only includes the vue2 all api, also contains vue-router 2 and vuex 2 code 
@@ -20,13 +14,6 @@
     - [vue](http://cn.vuejs.org/) | [vue-router](https://router.vuejs.org/zh-cn/) |  [vuex](https://vuex.vuejs.org/zh-cn/)
 ![zh](./src/images/description.gif)
 
-- （3）vue Syntax highlighting depend on [vuter](https://github.com/octref/vetur) ,So you install vuehelper will automatically install vetur
-
-```
-  "extensionDependencies": [
-    "octref.vetur"
-  ]
-```
 
 
 ## snippets

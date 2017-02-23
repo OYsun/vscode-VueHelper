@@ -2,11 +2,11 @@
     "name": "vuehelper",
     "displayName": "VueHelper",
     "description": "Code snippets for Vue,Vue-router and Vuex",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "publisher": "oysun",
     "icon": "src/images/logo.jpg",
     "engines": {
-        "vscode": "^1.5.0"
+        "vscode": "^1.8.0"
     },
     "keywords": [
         "javascript",
@@ -27,9 +27,6 @@
         "url": "https://github.com/OYsun/vscode-VueHelper/issues",
         "email": "web-oysun@qq.com"
     },
-    "extensionDependencies": [
-        "octref.vetur"
-    ],
     "license": "MIT",
     "contributes": {
         "snippets": [
@@ -44,10 +41,6 @@
             {
                 "language": "html",
                 "path": "./src/snippets/html.json"
-            },
-            {
-                "language": "vue",
-                "path": "./src/snippets/vue.json"
             }
         ]
     },
