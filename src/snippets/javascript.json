@@ -499,7 +499,7 @@
     "scrollBehavior": {
         "prefix": "scrollBehavior",
         "body": [
-            "scrollBehavior (to, from, savedPosition){\n\t${//return desired position}\n\t$0\n}"
+            "scrollBehavior (to, from, savedPosition){\n\t${0://return desired position}\n\t$1\n}"
         ],
         "description": "[router]Scroll Behavior(this feature only works in HTML5 history mode)"
     },
@@ -583,28 +583,28 @@
     "router.beforeEach": {
         "prefix": "router.beforeEach",
         "body": [
-            "router.beforeEach((to, from, next) => {\n\t${//to and from are Route Object,next() must be called to resolve the hook}\n\t$0\n})"
+            "router.beforeEach((to, from, next) => {\n\t${0://to and from are Route Object,next() must be called to resolve the hook}\n\t$1\n})"
         ],
         "description": "[router] register global before guards"
     },
     "router.afterEach": {
         "prefix": "router.afterEach",
         "body": [
-            "router.afterEach( ${route} => {\n\t${//these hooks do not get a next function and cannot affect the navigation}\n\t$0\n})"
+            "router.afterEach( ${route} => {\n\t${0://these hooks do not get a next function and cannot affect the navigation}\n\t$1\n})"
         ],
         "description": "[router] register global after guards"
     },
     "beforeRouteEnter": {
         "prefix": "beforeRouteEnter",
         "body": [
-            "beforeRouteEnter((to, from, next) => {\n\t${//does NOT have access to `this` component instance}\n\t$0\n})"
+            "beforeRouteEnter((to, from, next) => {\n\t${0://does NOT have access to `this` component instance}\n\t$1\n})"
         ],
         "description": "[router]define beforeEnter guards directly on a route's configuration object:"
     },
     "beforeRouteLeave": {
         "prefix": "beforeRouteLeave",
         "body": [
-            "beforeRouteLeave((to, from, next) => {\n\t${//has access to `this` component instance}\n\t$0\n})"
+            "beforeRouteLeave((to, from, next) => {\n\t${0://has access to `this` component instance}\n\t$1\n})"
         ],
         "description": "[router]define beforeEnter guards directly on a route's configuration object:"
     },
